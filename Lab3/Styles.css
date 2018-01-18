@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    background-color: lightgrey;
+}
+h2{
+    color:darkgray;
+}
+
+h3{
+    margin-left: 1em;
+}
+ul{
+    margin-left: 1.5em;
+}
+p{
+    margin-left: 2em;
+    border-color: black;
+    border-style: dashed;
+    border-width: thick;
+}
+
+a{
+    font-size: 1.2em;
+    color: red;
+}
