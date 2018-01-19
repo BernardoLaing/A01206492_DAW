@@ -29,3 +29,15 @@ a{
     font-size: 1.2em;
     color: red;
 }
+
+#foot{
+    text-align: center;
+}
+
+.titulos{
+    font-size: 3em;
+}
+
+.texto{
+    background-color: aqua;
+}
