@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="BernardoLaing">
+
+    <title>Lab 6</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Preguntas a responder</h1>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-4">
+                    <h3 id="pregunta-1">¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</h3>
+                    <ul id="respuesta-1">
+                        <li><b>Static:</b> Es el default, los elementos aparecen en orden como estén en el html.</li>
+                        <li><b>Absolute:</b> Se posiciona relativo a el primer elemento padre.</li>
+                        <li><b>Fixed:</b> La posición es relativa a la ventana del navegador.</li>
+                        <li><b>Relative:</b> relativo a su posición normal.</li>
+                        <li><b>Sticky:</b> Está posicionado según la posición del "scroll".</li>
+                        <li><b>Initial:</b> Pone la propiedad al valor default.</li>
+                        <li><b>Inherit:</b> Hereda la propiedad de su elemento padre</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 id="pregunta-2">¿Cuáles son los valores estándar para la propiedad visibility?</h3>
+                    <ul id="respuesta-2">
+                        <li><b>Visible:</b> Es el default, el elemento es visible.</li>
+                        <li><b>Hidden:</b> No se ve el elemento, pero afecta la posición.</li>
+                        <li><b>Collapse:</b> El elemento no es visible.</li>
+                        <li><b>Initial:</b> Pone la propiedad al valor default.</li>
+                        <li><b>Inherit:</b> Hereda la propiedad de su elemento padre</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 id="pregunta-3">¿Qué es el zIndex y para qué sirve?</h3>
+                    <p id="respuesta-3">Es la posición de pila de un elemento, basicamente, es qué elemento va "encima" de otros. Se utiliza cuando tienes que tener un elemento ya sea atrás o delante de otro, pero ocupando la misma posición de la pantalla. Por ejemplo, las barras de navegación suelen tener un z-index alto, y así se muestran por encima de los demás elementos.</p>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <h1>Validación de Contraseña</h1>
+            <form method="post"  id="pwd">
+                <p>La contraseña tiene que contener al menos 8 caractéres, mínimo 1 número y una letra.</p>
+                <p>Ingresa la contraseña: <input type="password" required name="password"></p>
+                <p>Vuelve a ingresar contraseña: <input type="password" required name="verif"></p>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="lab6.js"></script>
+
+</body>
+</html>
