@@ -1,11 +1,13 @@
 .container:after {
-    content: url(Laiter.png);
+/*    content: url(Laiter.png);*/
+    content: "Bernardo Laing";
+    font-size: 720%;
     opacity: 0.1;
-    width: 20%;
+/*    width: 20%;*/
     display: block;
     position: fixed;
-    top: 10%;
-    left: 0;
+    top: 20%;
+    left: 15%;
     right: 0;
     z-index: 1000;
     -webkit-pointer-events: none;
@@ -13,10 +15,40 @@
     -ms-pointer-events: none;
     -o-pointer-events: none;
     pointer-events: none;
+    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+.respuestas{
+    visibility: hidden;
+}
+
+#password-reqs{
+    overflow-y: hidden;
+    height: 0;
+    transition: height 1s;
+}
+
+#div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#drag1{
+    width: 80px;
+    height: 80px;
 }
