@@ -25,7 +25,7 @@ function hideQuestion3() {
     document.getElementById("pregunta-3").onclick = showQuestion3;
 }
 
-function showQuestion1() {
+function showQuestion3() {
     document.getElementById("respuesta-3").style.visibility = "visible";
     document.getElementById("pregunta-3").onclick = hideQuestion3;
 }
@@ -35,13 +35,12 @@ document.getElementById("pregunta-2").onclick = hideQuestion2;
 document.getElementById("pregunta-3").onclick = hideQuestion3;
 
 //Funciones para validar la contraseña de manera dinámica
-function validPassword(str) {
-    var r = /^(?=.*\d)(?=.*[a-z]).{8,}$/;
-    return r.test(str);
-}
-
-function validateForm(form) {
-    if !validPassword(form.password.value) {
-        inlineMessage('password', '<b>Contraseña Inválida</>')
+function addEvent(node, type, callback) {
+    if(node.addEventListener) {
+        node.addEventListener(type,
+                             function(e){
+            callback(e, e.target);
+        },
+                             fale);
     }
 }
