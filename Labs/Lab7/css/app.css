@@ -1,0 +1,13 @@
+img.logo{
+    max-width: 400px;
+}
+
+.rounded-corners {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+button.button {
+    padding: 0.4em 1em;
+}

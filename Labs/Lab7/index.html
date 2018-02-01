@@ -1,46 +1,87 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
     <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 7</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
     </head>
-
-    <body>
-        <div class="container">
-            <div class="row white-text red lighten-1">
-                <div class="col m6 valign-wrapper">
-                    <h2>Materialize.css</h2>
+<body>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <h1>Foundation Framework</h1>
+                    <a href="https://foundation.zurb.com" target="_blank">Foundation</a>
                 </div>
-                <div class="col m6 red lighten-3 black-text">
-                      <ul class="collapsible popout">
-                        <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        </ul>
+            </div>
+
+            <div class="grid-y align-center-middle">
+                <div class="shrink">
+                    <img src="src/logo-ceceq.jpg" class="logo Absolute-Center">
+                </div>
+                <form data-abide novalidate>
+                    <div class="grid-container">
+                        <div class="grid-y align-center-middle">
+                            <div class="medium-6 cell">
+                                <label>Usuario:
+                                    <input type="text" class="rounded-corners" required placeholder="Usuario">
+                                    <span class="form-error">Campo requerido.</span>
+                                </label>
+                            </div>
+                            <div class="medium-6 cell">
+                                <label>Constraseña:
+                                    <input type="password" class="rounded-corners" required placeholder="Contraseña">
+                                    <span class="form-error">Campo requerido.</span>
+                                </label>
+                            </div>
+                            <fieldset class="medium-6 columns">
+                                <button class="expanded button rounded-corners" type="submit" value="Submit">Iniciar Sesión</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+<!--
+                <div class="large-12 cell">
+                    <div class="callout">
+                        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+                        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+                        <p>Once you've exhausted the fun in this document, you should check out:</p>
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-4 medium-4 cell">
+                                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+                            </div>
+                            <div class="large-4 medium-4 cell">
+                                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
+                            </div>
+                            <div class="large-4 medium-4 cell">
+                                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-4 medium-4 medium-push-2 cell">
+                                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+                            </div>
+                            <div class="large-4 medium-4 medium-pull-2 cell">
+                                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
+            </div>
+            <div class="large-12 cell">
+                <div class="callout">
+                    <h3>Material Design</h3>
+                    <p>Material Design es un conjunto de lineamientos especificados por Google, basada en movimiento suave y una buena experiencia para el usuario. Fue hecho en un principio para el desarrollo móvil, por lo que está basado en interacción táctil, pero ahora es muy utilizado en desarrollo web.</p>
                 </div>
             </div>
         </div>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.collapsible').collapsible();
-            });
-        </script>
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
