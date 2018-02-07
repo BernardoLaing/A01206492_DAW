@@ -24,8 +24,8 @@
                     foreach($array as $nums){
                         $count = $count + $nums;
                     }
-                    
-                    $prom = $count / length($array);
+                    $prom = 1;
+//                    $prom = $count / length($array);
                     return $prom;
                 }
             
