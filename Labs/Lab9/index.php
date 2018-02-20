@@ -45,7 +45,7 @@
                     
                     $prom = $count / length($array);
                     $med = mediana($array);
-                    echo "<li>Promedio: " . $prom . "</li>";
+                    echo "<ul><li>Promedio: " . $prom . "</li>";
                     echo "<li>Mediana: " . $med . "</li>";
                     sort($array);
                     foreach($array as $nums) {
@@ -55,6 +55,7 @@
                     foreach($array as $nums) {
                         echo "<li>" . $nums . "</li>";
                     }
+                    echo "</ul>";
                 }
             
             
