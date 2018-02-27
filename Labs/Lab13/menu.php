@@ -4,16 +4,16 @@
 
 <?php 
 # Administrador
-$perm["entry"] = 1;
-$perm["lend"] = 1;
-$perm["stats"] = 1;
-$perm["dgb"] = 1;
+$perm["entry"] = 0;
+$perm["lend"] = 0;
+$perm["stats"] = 0;
+$perm["dgb"] = 0;
 $perm["visitors"] = 1;
-$perm["users"] = 1;
-$perm["act"] = 1;
-$perm["catalog"] = 1;
-$perm["control"] = 1;
-$perm["sanctions"] = 1;
+$perm["users"] = 0;
+$perm["act"] = 0;
+$perm["catalog"] = 0;
+$perm["control"] = 0;
+$perm["sanctions"] = 0;
 # Usuario Simple
 //$perm["entry"] = 0;
 //$perm["lend"] = 0;
