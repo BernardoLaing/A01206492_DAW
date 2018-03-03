@@ -1,0 +1,18 @@
+¿Por qué es importante hacer un session_unset() y luego un session_destroy()?
+Para primero eliminar las variables globales de la sesión y una vez hecho esto, eliminar la sesión del usuario.
+
+¿Cuál es la diferencia entre una variable de sesión y una cookie?
+Una variable de sesión es una variable global que se mantiene durante la sesión de un usuario, la variable solo puede ser utilizada dentro de la sesión iniciada por cierto usuario.
+Una cookie es una variable que perdura y es almacenada en el disco duro del usuario, puede permanecer más tiempo que el de la variable de sesión.
+
+¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?
+Se revisan las variables de la sesión, para ver que no exista una con el mismo nombre.
+
+¿Qué es CSRF y cómo puede prevenirse?
+Es un ataque que forza al usuario a ejecutar acciones no deseadas en una aplicación web en donde ellos ya están autenticados.
+Se previene utilizando frameworks que ya tengan soporte instalado como Django.
+
+
+
+
+								
